@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity_Introduction"
+    tools:showIn="@layout/app_bar_main_activity__introduction">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_new_car"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity_Introduction"
+
+        tools:showIn="@layout/app_bar_main_activity__introduction">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="لطفا مشخصات خودرو را وارد فرماپید:"
+                android:textAlignment="center"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="نوع خودرو:"
+                android:layout_margin="3dp"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_cartyp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="ماشین،موتور..."
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="نوع اتاق:"
+                android:layout_margin="3dp"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_chassi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="کامیون سواری ،وانت..."
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="نام تجاری:"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="left"/>
+
+            <EditText
+                android:id="@+id/txt_intro_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="پراید،اپتیما،سمند..."
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="رنگ:"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_color"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_margin="3dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="نقره ای متالیک،سفید روغنی..."
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="شماره پلاک:"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_moto_plak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_margin="3dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="ایران 45-762ت22"
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="سال ساخت:"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_moto_yer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="1397"
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="نوع سوخت:"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_moto_cyl_fultyp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint="بنزین ، گازوئیل ..."
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight=".24"
+            android:fontFamily="@font/bnazaninbld"
+            android:text="حجم موتور:"
+            android:gravity="left"
+            android:textColor="#212121"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_intro_moto_moto_cap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight=".76"
+            android:background="@drawable/shape_new_caredt"
+            android:fontFamily="@font/yekan"
+            android:hint="سی سی"
+            android:textColor="#865606"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".24"
+                android:fontFamily="@font/bnazaninbld"
+                android:text="شماره شاسی:"
+                android:gravity="left"
+                android:textColor="#212121"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_intro_chassi_No"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight=".76"
+                android:background="@drawable/shape_new_caredt"
+                android:fontFamily="@font/yekan"
+                android:hint=""
+                android:textColor="#865606"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:text="ثبت"
+                android:elevation="8dp"
+
+                android:background="#dddd"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bnazaninbld"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:id="@+id/btm_fintro_add"
+
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_car"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:elevation="3dp"
+            >
+
+        </ImageView>
+
+       </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView >

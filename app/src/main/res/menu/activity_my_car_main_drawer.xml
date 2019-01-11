@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_intro"
+            android:icon="@mipmap/ico_pius"
+            android:title="معرفی خودرو" />
+        <item
+            android:id="@+id/nav_mycar"
+            android:icon="@mipmap/ico_car"
+            android:title="خودروهای من" />
+        <item
+            android:id="@+id/nav_servic"
+            android:icon="@mipmap/ico_servic"
+            android:title="عملیات سرویس" />
+        <item
+            android:id="@+id/nav_rep"
+            android:icon="@mipmap/ico_rep"
+            android:title="گزارشات" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

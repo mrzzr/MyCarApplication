@@ -1,5 +1,6 @@
 package mrzeinaliarya3624_mycar.mycarapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -105,11 +106,13 @@ public class MainActivity_Introduction extends AppCompatActivity
                     edtclvo.getText().clear();
 
 
+
                     //Toast.makeText(getApplicationContext(),dbh.displayCar(),Toast.LENGTH_LONG).show();
                     dbh.close();
                 }
                 else {
                     Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+
                 }
 
 

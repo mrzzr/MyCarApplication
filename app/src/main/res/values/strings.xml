@@ -7,6 +7,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main__introduction">MainActivity_Introduction</string>
-    <string name="ValidInput">با عرض پوزش تکمیل تمام اطلاعات خواسته شده ضروری است!!</string>
+    <string name="ValidInput"> تکمیل تمام اطلاعات خواسته شده ضروری است!!</string>
     <string name="Inserted">موارد با موفقیت ذخیره شد</string>
 </resources>

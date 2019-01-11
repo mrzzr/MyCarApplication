@@ -94,11 +94,11 @@ public class dbHandler extends SQLiteOpenHelper {
             tp.put("color",colr);
             tp.put("plak",plk);
             tp.put("production_yer",yer);
-
             tp.put("fuel_type",ful);
             tp.put("cylinder_volume",cvolum);
 
             db.insert(TBL_CAR,"typ",tp);
+
 
 
         }

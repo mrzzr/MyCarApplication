@@ -329,39 +329,7 @@
 
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginTop="6dp"
-                android:layout_weight=".24"
-                android:fontFamily="@font/bnazaninbld"
-                android:text="شماره شاسی:"
-                android:gravity="left"
-                android:textColor="#212121"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/txt_intro_chassi_No"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_marginTop="6dp"
-                android:layout_weight=".76"
-                android:background="@drawable/shape_new_caredt"
-                android:fontFamily="@font/yekan"
-                android:hint=""
-                android:textColor="#865606"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </LinearLayout>
 
 
 

@@ -56,21 +56,63 @@ public class MainActivity_Introduction extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
+                /*
                 if (edtyp.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
-                }else {
+                }
+                if (edtchas.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtbrnd.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtcolor.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtplk.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtyer.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtful.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                if (edtclvo.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+                */
+                if (!edtyp.getText().toString().equals("")&& !edtchas.getText().toString().equals("")
+                    && !edtbrnd.getText().toString().equals("") && !edtcolor.getText().toString().equals("")
+                    && !edtplk.getText().toString().equals("") && !edtyer.getText().toString().equals("")
+                    && !edtful.getText().toString().equals("")&& !edtclvo.getText().toString().equals("")){
+                    //Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
                     //Toast.makeText(getApplicationContext(),edtyp.getText().toString(),Toast.LENGTH_LONG).show();
                     dbHandler dbh= new dbHandler(MainActivity_Introduction.this);
                     dbh.open();
                     dbh.insertCar(edtyp.getText().toString(),edtchas.getText().toString()
-                                 ,edtbrnd.getText().toString(),edtcolor.getText().toString()
-                                 ,edtplk.getText().toString(),edtyer.getText().toString()
-                                 ,edtful.getText().toString(),edtclvo.getText().toString());
+                            ,edtbrnd.getText().toString(),edtcolor.getText().toString()
+                            ,edtplk.getText().toString(),edtyer.getText().toString()
+                            ,edtful.getText().toString(),edtclvo.getText().toString());
                     Toast.makeText(getApplicationContext(),R.string.Inserted,Toast.LENGTH_LONG).show();
+                    edtyp.getText().clear();
+                    edtchas.getText().clear();
+                    edtbrnd.getText().clear();
+                    edtcolor.getText().clear();
+                    edtplk.getText().clear();
+                    edtyer.getText().clear();
+                    edtful.getText().clear();
+                    edtclvo.getText().clear();
+
+
                     //Toast.makeText(getApplicationContext(),dbh.displayCar(),Toast.LENGTH_LONG).show();
                     dbh.close();
-
                 }
+                else {
+                    Toast.makeText(getApplicationContext(),R.string.ValidInput,Toast.LENGTH_LONG).show();
+                }
+
+
             }
         });
 /*
